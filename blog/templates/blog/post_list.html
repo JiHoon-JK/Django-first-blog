@@ -9,17 +9,13 @@
         <h1><a href="">Django DeVlog</a></h1>
     </div>
 
+    {% for post in posts %}
     <div>
-        <p>published: 2020.08.05, 15:30</p>
-        <h2><a href="">My first post</a></h2>
-        <p>새로운 포스트를 장고로 만들어보았습니다. 장고 아주 재밌네요 :D</p>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
     </div>
-
-    <div>
-        <p>published: 2020.08.05, 16:30</p>
-        <h2><a href="">My second post</a></h2>
-        <p>두번째 포스트는 할리스커피 신촌점에서 작성했습니다.</p>
-    </div>
+    {% endfor %}
 
 </body>
 </html>

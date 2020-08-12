@@ -25,7 +25,7 @@ SECRET_KEY = 'n#&^3y$eqs-d4&jmncg4m7^p4nb8fxc9ww--4n_x3x^-@3u=fk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['junidevlog.pythonanywhere.com']
 
 
 # Application definition
